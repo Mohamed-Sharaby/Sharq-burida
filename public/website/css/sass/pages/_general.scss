@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Almarai", sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.before-background{
+    height: 50px;
+}
+/******************************************Start-background-Section******************************************/
+.profile-background,
+.adminstration-background,
+.rating-background,
+.ideas-background,
+.media-section-background,
+.achievement-background,
+.policies-background,
+.media-background,
+.donate-section-background,
+.roles-section-background {
+    height: 120px;
+    width: 100%;
+    margin-top: 30px;
+    background: linear-gradient(to bottom, rgba($primaryColor, 0.5)), url(/img/profile-bg.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: $whiteColor;
+        font-size: 25px;
+    }
+}
+/******************************************End-background-Section******************************************/
+
+/******************************************Start-Box-Section******************************************/
+.main-section-profile,
+.main-section-adminstration,
+.main-section-media-section,
+.main-donate-section,
+.main-roles-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > div:last-child {
+        margin-bottom: 10px;
+    }
+    .profile-box,
+    .adminstration-box,
+    .media-section-box,
+    .donate-box,
+    .roles-box {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.17), 0 4px 4px rgba(0, 0, 0, 0.21);
+        border-radius: 15px;
+        width: 90%;
+        margin-bottom: 50px;
+        transform: translateY(300px);
+        animation: slideUp 1.1s ease-in-out forwards 1.1s;
+        cursor: pointer;
+        .box-title {
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+            padding: 20px;
+            background-color: $pinkColor;
+            span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .box-background {
+            width: 100%;
+            height: 400px;
+
+            img {
+                border-radius: 0 0 15px 15px;
+                width: 100%;
+                height: 100%;
+                /*
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                */
+                object-fit: cover;
+            }
+        }
+    }
+
+    .media-section-box {
+        img {
+            border-radius: 15px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .media-section-background {
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .before-background{
+        height: 120px;
+    }
+    .main-section-profile,
+    .main-section-adminstration,
+    .main-section-media-section,
+    .main-donate-section,
+    .main-roles-section {
+        .profile-box,
+        .adminstration-box,
+        .media-section-box,
+        .donate-box,
+        .roles-box {
+            width: 90%;
+            .box-background {
+                height: 280px;
+            }
+        }
+    }
+
+    .main-section-media-section {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .media-section-background {
+        span {
+            font-size: 15px;
+        }
+    }
+    .before-background{
+        height: 50px;
+    }
+    .achievement-background,
+    .adminstration-background,
+    .policies-background,
+    .media-background,
+    .donate-section-background,
+    .roles-section-background {
+        span {
+            font-size: 20px;
+        }
+    }
+    .main-section-profile,
+    .main-section-adminstration,
+    .main-section-media-section,
+    .main-donate-section,
+    .main-roles-section {
+        .profile-box,
+        .adminstration-box,
+        .media-section-box,
+        .donate-box,
+        .roles-box {
+            width: 90%;
+            .box-background {
+                height: 150px;
+            }
+        }
+    }
+}
+
+/******************************************End-Box-Section******************************************/
+
+/******************************************Start-Drop-Down-Section******************************************/
+.dropdown-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    min-height: 400px;
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        padding: 10px 30px 10px 20px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        box-shadow: inset 0 0 #333;
+        transition: all 0.2s linear 0s;
+        background-color: $pinkColor;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 80%;
+
+        .dropdown-title {
+            text-align: right;
+            font-size: 15px;
+            color: $blackColor;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 100px;
+            overflow-y: auto;
+            padding: 5px;
+            z-index: 1;
+            top: 45px;
+            left: 0px;
+            background-color: #fafafa;
+            .item {
+                padding: 10px;
+                //  margin-bottom: 0;
+                transition: all 0.1s linear 0s;
+                box-shadow: 0 1px rgba(0, 0, 0, 0.05);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                &:nth-child(even) {
+                    background-color: $whiteColor;
+                }
+                .item-title {
+                    text-align: right;
+                    color: $dark-graycolor;
+                    font: normal normal normal 14px Almarai;
+                    order: 1;
+                }
+                .item-file {
+                    color: #f15642;
+                    font: normal normal normal 24px Almarai;
+                }
+                &:last-child {
+                    box-shadow: 0 0 0 transparent;
+                }
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 5px;
+            border-color: #333 transparent transparent transparent;
+            top: 50%;
+            left: 10px;
+            margin-top: -2px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-section {
+        padding: 40px;
+        margin-top: 10px;
+        min-height: 300px;
+        .dropdown {
+            width: 100%;
+            .dropdown-title {
+                text-align: right;
+                font-size: 14px;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                padding: 0 1px;
+                direction: rtl;
+            }
+            .dropdown-content {
+                max-height: 70px;
+                .item {
+                    .item-title {
+                        font: normal normal normal 12px Almarai;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        padding: 0 1px;
+                        direction: rtl;
+                    }
+                    .item-file {
+                        font: normal normal normal 20px Almarai;
+                    }
+                }
+            }
+        }
+    }
+}
+/******************************************End-Drop-Down-Section******************************************/
+
+/******************************************Start-Animation******************************************/
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/******************************************End-Animation******************************************/
+
+/******************************************Start-Scrollbar-Styling******************************************/
+::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 10px;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $primaryColor;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $whiteColor;
+}
+/******************************************End-Scrollbar-Styling******************************************/

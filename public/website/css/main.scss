@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+//helper
+@import"sass/helper/variables";
+//Compenents
+@import "sass/compenents/buttons";
+//layouts
+@import "sass/layout/loader";
+@import"sass/layout/navbar";
+@import"sass/layout/footer";
+
+//Pages
+@import "sass/pages/home";
+@import "sass/pages/general";
+@import "sass/pages/rating";
+@import "sass/pages/ideas";

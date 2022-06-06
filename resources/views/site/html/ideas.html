@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="PanoramaAlqassiem">
+    <meta name="theme-color" content="#BE894B">
+    <title>مقترحاتك</title>
+    <!--Favicon-->
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/svg" href="img/custom-logo.svg">
+    <link rel="shortcut icon" sizes="192x192" href="img/custom-logo.svg">
+    <link rel="apple-touch-icon" href="img/custom-logo.svg">
+
+    <!--***************Start-Style***************-->
+
+    <!--Main-Style-->
+    <link rel="stylesheet" href="css/main.css">
+    
+      <!--En-Style-->
+    <!--<link rel="stylesheet" href="/css/en-main.css">-->
+    
+    <!--***************End-Style***************-->
+
+</head>
+
+<body>
+    <!-----------------------------------start-Navbar-Section----------------------------------->
+    <nav class="custom-nav">
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-menu">
+            <a class="active navbar-link" href="index.html">الرئيسية</a>
+            <a href="profile.html" class="navbar-link">بروفايل</a>
+            <a href="administration.html" class="navbar-link">الطاقم الادارى</a>
+            <a href="policies.html" class="navbar-link">اللوائح و السياسات</a>
+            <a href="media.html" class="navbar-link">المركز الاعلامى</a>
+        </div>
+        <a href="index.html" class="logo">
+            <img src="img/custom-logo.svg">
+        </a>
+        <!--Start-Media-Center-Scoial-Section-->
+        <div class=" media-center" onclick="location.href='mediasection.html';">
+            <span>يمكنك التبرع الان</span>
+            <span> طريقك للمشاركة في الدعوة إلى الله تعالى</span>
+            <i class="fas fa-arrow-left"></i>
+
+        </div>
+        <!--Start-Media Center-Scoial-Section-->
+    </nav>
+    <!-----------------------------------End-Navbar-Section----------------------------------->
+
+    <!-----------------------------------Start-Sticky-Scoial-Section----------------------------------->
+    <div class="sticky-social">
+        <ul class="social">
+            <li class="call-icon"><a href="#"><i class="fas fa-phone-alt" aria-hidden="true"></i></a></li>
+            <li class="map-icon"><a href="#"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a></li>
+            <li class="twitter-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="youtube-icon"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-----------------------------------End-Sticky-Scoial-Section----------------------------------->
+
+    <!-----------------------------------Start-Ideas-Background----------------------------------->
+    <div class="ideas-background ">
+        <span>مقتــرحاتك</span>
+    </div>
+    <!-----------------------------------End-Ideas-Background----------------------------------->
+
+    <!-----------------------------------Start-Ideas-Section----------------------------------->
+    <div class="ideas">
+        <h3>مقتــرحاتك</h3>
+        <form class="questionnaire">
+            <div class="choices">
+                <h4>نــــوع الرسـالة</h4>
+                <p>
+                    <input type="radio" id="test1" name="radio-group">
+                    <label for="test1">فكرة</label>
+                </p>
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="test2">شكوى</label>
+                </p>
+
+            </div>
+        </form>
+
+        <div class="contact-form">
+            <form id="contact" action="" method="post">
+                <fieldset>
+                    <input placeholder="الاسم" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="الجـوال" type="tel" tabindex="2" optional>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="المديـــنة" type="text" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="الرســالة...." tabindex="4" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" class="main-btn" data-submit="...Sending">إرســـال</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+    <!-----------------------------------End-Ideas-Section----------------------------------->
+
+    <!-----------------------------------Start-Footer----------------------------------->
+    <footer>
+        <p>جميع الحقوق محفوظة لدى بانــوراما القصيم</p>
+    </footer>
+    <!-----------------------------------End-Footer----------------------------------->
+
+    <!--***************Start-Js***************-->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+     <!--fontawosme-->
+     <script src="js/fontawosme.js"></script>
+    <!--Custom initializations-->
+    <script src="js/main.js"></script>
+    <!--***************End-Js***************-->
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="PanoramaAlqassiem">
+    <meta name="theme-color" content="#BE894B">
+    <title>تقييمك</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/svg" href="img/custom-logo.svg">
+    <link rel="shortcut icon" sizes="192x192" href="img/custom-logo.svg">
+    <link rel="apple-touch-icon" href="img/custom-logo.svg">
+    <!--***************Start-Style***************-->
+
+    <!--Main-Style-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--En-Style-->
+    <!--<link rel="stylesheet" href="css/en-main.css">-->
+
+    <!--***************End-Style***************-->
+</head>
+
+<body>
+    <!-----------------------------------start-Navbar-Section----------------------------------->
+    <nav class="custom-nav">
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!--Start-Media-Center-Scoial-Section-->
+        <div class=" media-center" onclick="location.href='mediasection.html';">
+            <span>يمكنك التبرع الان</span>
+            <span> طريقك للمشاركة في الدعوة إلى الله تعالى</span>
+            <i class="fas fa-arrow-left"></i>
+
+        </div>
+        <!--Start-Media Center-Scoial-Section-->
+        <div class="navbar-menu">
+            <a class="navbar-link" href="index.html">الرئيسية</a>
+            <a href="profile.html" class="navbar-link">بروفايل</a>
+            <a href="administration.html" class="navbar-link">الطاقم الادارى</a>
+            <a href="policies.html" class="navbar-link">اللوائح و السياسات</a>
+            <a href="media.html" class="navbar-link">المركز الاعلامى</a>
+        </div>
+        <a href="index.html" class="logo">
+            <img src="img/custom-logo.svg">
+        </a>
+
+    </nav>
+    <!-----------------------------------End-Navbar-Section----------------------------------->
+
+    <!-----------------------------------Start-Sticky-Scoial-Section----------------------------------->
+    <div class="sticky-social">
+        <ul class="social">
+            <li class="call-icon"><a href="#"><i class="fas fa-phone-alt" aria-hidden="true"></i></a></li>
+            <li class="map-icon"><a href="#"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a></li>
+            <li class="twitter-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="youtube-icon"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-----------------------------------End-Sticky-Scoial-Section----------------------------------->
+
+
+    <!-----------------------------------Start-Rating-Background----------------------------------->
+    <div class="rating-background ">
+        <span>تقييمك</span>
+    </div>
+    <!-----------------------------------End-Rating-Background----------------------------------->
+
+    <!-----------------------------------Start-Rating-questionnaire-Section----------------------------------->
+    <div class="rating">
+        <h3>اســتبيان</h3>
+        <form class="questionnaire">
+            <div class="title">
+                <h4>مدى رضاك عن البرامج المقدمة</h4>
+            </div>
+            <div class="choices">
+                <p>
+                    <input type="radio" id="test1" name="radio-group">
+                    <label for="test1">ممتاز</label>
+                </p>
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="test2">جيد</label>
+                </p>
+                <p>
+                    <input type="radio" id="test3" name="radio-group">
+                    <label for="test3">غير راضي</label>
+                </p>
+            </div>
+        </form>
+        <form class="questionnaire">
+            <div class="title">
+                <h4>مدى رضاك عن مقدم الخدمة</h4>
+            </div>
+            <div class="choices">
+                <p>
+                    <input type="radio" id="test4" name="radio-group">
+                    <label for="test4">ممتاز</label>
+                </p>
+                <p>
+                    <input type="radio" id="test5" name="radio-group">
+                    <label for="test5">جيد</label>
+                </p>
+                <p>
+                    <input type="radio" id="test6" name="radio-group">
+                    <label for="test6">غير راضي</label>
+                </p>
+            </div>
+        </form>
+        <form class="questionnaire">
+            <div class="title">
+                <h4>مدى سهولة استخدام الموقع</h4>
+            </div>
+            <div class="choices">
+                <p>
+                    <input type="radio" id="test7" name="radio-group">
+                    <label for="test7">ممتاز</label>
+                </p>
+                <p>
+                    <input type="radio" id="test8" name="radio-group">
+                    <label for="test8">جيد</label>
+                </p>
+                <p>
+                    <input type="radio" id="test9" name="radio-group">
+                    <label for="test9">غير راضي</label>
+                </p>
+            </div>
+        </form>
+        <div class="send-message">
+            <h4>سجل انطباعك حول الجمعية</h4>
+            <div class="message-form">
+                <input type="text">
+                <button class="main-btn">إرســـال</button>
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------------End-Rating-questionnaire-Section------------------------------------>
+
+    <!-----------------------------------Start-Footer----------------------------------->
+    <footer>
+        <p>جميع الحقوق محفوظة لدى بانــوراما القصيم</p>
+    </footer>
+    <!-----------------------------------End-Footer----------------------------------->
+
+    <!--***************Start-Js***************-->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!--fontawosme-->
+    <script src="js/fontawosme.js"></script>
+    <!--Custom initializations-->
+    <script src="js/main.js"></script>
+    <!--***************End-Js***************-->
+</body>
+
+</html>

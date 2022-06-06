@@ -1,0 +1,37 @@
+//Main-btn
+.main-btn {
+   // padding: 7px 10px;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    max-width: 120px;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+
+}
+
+
+.mob-btn {
+     background-color: $primaryColor;
+     color: $whiteColor;
+     text-decoration: none;
+     outline: none;
+     border: none;
+     text-align: center;
+     border-radius: 5px;
+     font-size: 15px;
+     max-width: 100px;
+     width: 100%;
+     height: 30px;
+     line-height: 30px;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+ }
